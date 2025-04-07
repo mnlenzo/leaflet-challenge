@@ -174,11 +174,11 @@ legend.onAdd = function() {
   for(var i = 0; i < intervals.length; i++)
   {
     // inner html that sets the sqaure for each interval and label
-    div.innerHTML += "<i style=background: "
+    div.innerHTML += "<i style='background: "
       + colors[i]
       + "'></i> "
       + intervals[i]
-      + (intervals[i + 1] ? "km &ndash km;" + intervals[i + 1] + "km<br>" : "+");
+      + (intervals[i + 1] ? "km &ndash; km" + intervals[i + 1] + "km<br>" : "+");
   }
 
   return div;
