@@ -50,7 +50,7 @@ defaultMap.addTo(myMap);
 let tectonicplates = new L.layerGroup();
 
 // call the api to get the info for the tectonic plates
-d3.json("https://github.com/fraxen/tectonicplates/blob/master/GeoJSON/PB2002_boundaries.json")
+d3.json("https://raw.githubusercontent.com/fraxen/tectonicplates/refs/heads/master/GeoJSON/PB2002_boundaries.json")
 .then(function(plateData){
   // console log to make sure the data loaded
   console.log(plateData);
